@@ -1,0 +1,14 @@
+
+.container{
+    width: 800px;
+    height: auto;
+    margin: auto;
+    background-color: rgb(240, 234, 227);
+    padding: 20px;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul p {
+    display: inline;
+}
