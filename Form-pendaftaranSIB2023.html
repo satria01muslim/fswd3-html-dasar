@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Pendaftaran SIB 2023</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Form Pendaftaran SIB 2023</h1>
+	<form action="#" method="post">
+		<label for="nama">Nama Lengkap:</label>
+		<input type="text" id="nama" name="nama" required><br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+
+        <label for="nomer">No.HP:</label>
+		<input type="nomer" id="nomer" name="nomer" required><br><br>
+
+		<label for="jenis_kelamin">Jenis Kelamin:</label>
+		<input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" required>
+		<label for="laki-laki">Laki-Laki</label>
+		<input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" required>
+		<label for="perempuan">Perempuan</label><br><br>
+
+		<label for="jurusan">Jurusan:</label>
+		<select id="jurusan" name="jurusan" required>
+			<option value="">--Pilih Jurusan--</option>
+			<option value="Teknik Informatika">Teknik Informatika</option>
+			<option value="Manajemen">Manajemen</option>
+			<option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+			<option value="Akutansi">Akutansi</option>
+			<option value="Matematika">Matematika</option>
+			<option value="Robotik">Robotik</option>
+		</select><br><br>
+        <label for="Alamat">Alamat:</label>
+		<textarea id="Alamat" name="Alamat" required> </textarea><br><br>
+
+        <input type="Choose File" value="Choose File">
+		<input type="submit" value="Daftar">
+	</form>
+</body>
+</html>
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="Nama Lengkap"],
+  input[type="Email"],
+  input[type="No.HP"],
+  input[type="Jenis Kelamin"],
+  input[type="Jurusan"],
+  input[type="Alamat"],
+   {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
