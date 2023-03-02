@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nota Pembelian Toko Elektronik Arkatonik</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Nota Pembelian Toko Elektronik Arkatonik</h1>
+        <h2>Jl Maju membangun bangsa No.123, Malang</h2>
+
+        <p>No.Nota:</p>
+        <p>Kepada Yth:</p>
+	    	<p>Tanggal:</p>
+		<table>
+			<thead>
+				<tr>
+					<th>No</th>
+          <th>Kode Barang</th>
+					<th>Nama Barang</th>
+					<th>Harga</th>
+					<th>Jumlah</th>
+					<th>Sub Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+          <td>BRG001</td>
+					<td>Monitor 17"</td>
+					<td>1.500.000</td>
+					<td>2</td>
+					<td>3.000.000</td>
+				</tr>
+				<tr>
+					<td>2</td>
+          <td>BRG002</td>
+					<td>Printer Epson L355</td>
+					<td>1.500.000</td>
+					<td>1</td>
+					<td>1.500.000</td>
+				</tr>
+                <tr>
+					<td>2</td>
+          <td>BRG003</td>
+					<td>Mouse Logitech</td>
+					<td>150.000</td>
+					<td>5</td>
+					<td>750.000</td>
+				</tr>
+				<tr>
+					<td colspan="5">Total:</td>
+					<td>4.750.000</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+	text-align: center;
+	margin-top: 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+td:last-child, th:last-child {
+	text-align: right;
+}
+
+tr:last-child {
+	font-weight: bold;
+}
+
+.total {
+	margin-top: 20px;
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.thankyou {
+	margin-top: 20px;
+	text-align: center;
+	font-style: italic;
+}
+
+@media print 
+	body {
+		background-color: #fff;
+	}
+
+	.container {
+		box-shadow: none;
+	}
+
+	.total, .thankyou {
+		display: none;
+	}
