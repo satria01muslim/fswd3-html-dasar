@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Layout Dasar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>AYO BACA BUKU</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="#">Buku</a></li>
+          <li><a href="#">Forum</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <article>
+        <h2>Menjadi orang baik</h2>
+        <p>Tanggal: <time datetime="2023-03-03">3 Maret 2023</time></p>
+        <p>Penulis: Fiersa Besari</p>
+        <p>Jatuh hati tidak pernah bisa memilih. Tuhan memilihkan. Kita hanyalah korban. Kecewa adalah konsekuensi, bahagia adalah bonus.</p>
+        <p> Hujan dan gebetan itu mirip. Ada yang mengaku suka, tapi hanya memandangnya dari tempat duduk yang hangat, berkata-kata romantis tanpa pernah mau bersinggungan. Ada yang betulan suka, mengalahkan rasa tidak nyaman, langsung berinteraksi dengannya meski berisiko sakit.
+            Dan jangan lupa bahwa Tuhan menciptakanmu berjalan di muka bumi ini untuk sesuatu yang baik, maka berbuat baiklah untuk sesama, melebihi kau berbuat baik untuk dirimu sendiri.
+        </p>
+      </article>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 Semoga bermanfaat</p>
+    </footer>
+  </body>
+</html>
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  article {
+    margin-bottom: 20px;
+  }
+  
+  article h2 {
+    margin-top: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
