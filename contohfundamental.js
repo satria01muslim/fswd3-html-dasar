@@ -1,37 +1,87 @@
-let x = 5; // Variabel
-let y = "Halo";
-let z = x + 10; // Operasi Aritmatika
+// if
+let nilai = 80;
 
-if (z > 10) { // Percabangan
-  console.log("z lebih besar dari 10");
-} else {
-  console.log("z kurang dari atau sama dengan 10");
+if (nilai >= 70) {
+  console.log("Anda lulus ujian.");
 }
 
-for (let i = 0; i < 5; i++) { // Perulangan
+// if else
+let nilai = 50;
+
+if (nilai >= 70) {
+  console.log("Anda lulus ujian.");
+} else {
+  console.log("Anda tidak lulus ujian.");
+}
+
+//else if
+let nilai = 60;
+
+if (nilai >= 80) {
+  console.log("Anda mendapat nilai A.");
+} else if (nilai >= 70) {
+  console.log("Anda mendapat nilai B.");
+} else if (nilai >= 60) {
+  console.log("Anda mendapat nilai C.");
+} else {
+  console.log("Anda mendapat nilai D.");
+}
+
+// switch
+let nilai = "A";
+
+switch (nilai) {
+  case "A":
+    console.log("Anda mendapat nilai sempurna.");
+    break;
+  case "B":
+    console.log("Anda mendapat nilai baik.");
+    break;
+  case "C":
+    console.log("Anda mendapat nilai cukup.");
+    break;
+  case "D":
+    console.log("Anda mendapat nilai kurang.");
+    break;
+  default:
+    console.log("Anda mendapat nilai tidak valid.");
+}
+
+//for
+for (let i = 1; i <= 10; i++) {
   console.log(i);
 }
-
-function tambah(x, y) { // Fungsi
-  return x + y;
+// do while
+let i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 10);
+// while
+let i = 1;
+while (i <= 10) {
+  console.log(i);
+  i++;
+}
+//basic function
+function greeting(name) {
+  console.log("Hello, " + name + "!");
 }
 
-let hasil = tambah(5, 3);
+greeting("sam");
 
-let orang = { // Objek
-  nama: "sam",
-  umur: 23,
-  alamat: "Lombok",
-  sapa: function() {
-    console.log("Halo, nama saya " + this.nama);
-  }
+//expression
+const greeting = function(name) {
+  console.log("Hello, " + name + "!");
 };
 
-console.log(orang.nama);
-orang.sapa();
+greeting("sam");
 
-let buah = ["apel", "mangga", "jeruk"]; // Array
-console.log(buah[1]);
+//arrow
+const greeting = (name) => {
+  console.log("Hello, " + name + "!");
+};
 
-buah.push("pisang");
-console.log(buah);
+greeting("sam");
+
+
