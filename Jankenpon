@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jankenpon</title>
+</head>
+<body>
+    <center>
+	<div id="player">
+		<h2>Pemain</h2>
+		<button id="rock">Batu</button>
+		<button id="paper">Kertas</button>
+		<button id="scissors">Gunting</button>
+	</div>
+	<div id="computer">
+		<h2>Komputer</h2>
+		<p>Pilihan komputer: <span id="computer-choice"></span></p>
+	</div>
+	<div id="result">
+		<h2>Hasil</h2>
+		<p id="result-message"></p>
+	</div>
+	<script src="script.js"></script>
+</center>
+</body>
+</html>
+
