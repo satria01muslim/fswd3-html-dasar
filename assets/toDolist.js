@@ -10,16 +10,16 @@ var createNewTaskElement=function(taskString){
 	var listItem=document.createElement("li");
 
 	//input (checkbox)
-	var checkBox=document.createElement("input");//checkbx
+	var checkBox=document.createElement("input");
 	//label
-	var label=document.createElement("label");//label
+	var label=document.createElement("label");
 	//input (text)
-	var editInput=document.createElement("input");//text
+	var editInput=document.createElement("input");
 	//button.edit
-	var editButton=document.createElement("button");//edit button
+	var editButton=document.createElement("button");
 
 	//button.delete
-	var deleteButton=document.createElement("button");//delete button
+	var deleteButton=document.createElement("button");
 
 	label.innerText=taskString;
 
