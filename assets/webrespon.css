@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    background-color: rgb(12, 11, 11);
+  }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+.nav {
+    padding: 10px;
+    width: 100%;
+}
+.nav p{
+    display: inline;
+    font-weight: bold;
+    padding: 1%;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+.home {
+    margin-block-end: 20em;
+}
+.jumbotron {
+    background-color: rgba(137, 141, 138, 0.386);
+    width: 100%;
+}
+.jumbotron h1 {
+    margin-left: 12em;
+    margin-right: 10em;
+}
+.jumbotron p {
+    margin-left: 23.5em;
+    margin-right: 10em;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.artikel {
+    width: 80%;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.des {
+    width: 100%;
+}
+
+.sidebar {
+    width: 18%;
+    color: gainsboro;
+}
+
+.card {
+    padding: 0.5em;
+    height:auto;
+    width: 29%;
+    float:left;
+    margin: 20px 1%;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    background-color: white;
+  }
+  
+  .head-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 0.1em;
+  }
+
+  .head-card h3,p{
+    padding-left: 10px;
+    bottom: 15%;
+  }
+
+  .body-card {
+    padding: 10px 10px;
+    padding-top: 0;
+  }
+  .selengkapnya {
+    background-color: rgba(53, 212, 218, 0.2);
+    font-size: small;
+    font-weight: bold;
+    border-radius: 2px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 10px;
+  }
+
+  @media screen and (max-width: 800px){
+    .jumbotron {
+        display: none;
+    }
+    .artikel {
+        width: 100%;
+    }
+    .card {
+        padding: 0.5em;
+        height:auto;
+        width: 100%;
+        float:left;
+        margin: 20px 1%;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0,0,0,.1);
+      }
+      .sidebar {
+        width: 100%;
+    }
+    .nav {
+        padding: 10px;
+        width: 100%;
+        background-color: rgb(54, 69, 235);
+        justify-content: center;
+    }
+    .nav p{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-weight: bold;
+        padding: 1%;
+        text-decoration: none;
+        justify-content: center;
+    }
+    .blog {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .home {
+        margin: 0;
+    }
+
+  }
